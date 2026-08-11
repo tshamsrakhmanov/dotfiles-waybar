@@ -2,7 +2,7 @@
 {
   "reload_style_on_change": true,
   "layer": "top", // Waybar at top layer
-  "position": "top", // Waybar position (top|bottom|left|right)
+  "position": "bottom", // Waybar position (top|bottom|left|right)
   // "height": 50, // Waybar height (to be removed for auto height)
   // "width": 1480, // Waybar width
   "spacing": 0, // Gaps between modules (4px)
@@ -47,7 +47,7 @@
       "7":[],
       "8":[],
       "9":[],
-      "10":[],
+      "10":[]
     }
   },
   "hyprland/window": {
@@ -98,7 +98,6 @@
     "format": "{volume}% {icon}",
     "format-bluetooth": "{volume}% ",
     "format-bluetooth-muted": " {icon}",
-    // "format-muted": " {format_source}",
     "format-muted": " ",
     "format-source": "{volume}% ",
     "format-source-muted": "",
