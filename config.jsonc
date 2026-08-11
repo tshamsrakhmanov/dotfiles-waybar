@@ -1,0 +1,135 @@
+// -*- mode: jsonc -*-
+{
+  "reload_style_on_change": true,
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  // "height": 50, // Waybar height (to be removed for auto height)
+  // "width": 1480, // Waybar width
+  "spacing": 0, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "hyprland/language",
+    "cpu",
+    "memory",
+    "tray",
+    "clock"
+    // "idle_inhibitor"
+  ],
+  // Modules configuration
+  "hyprland/workspaces": {
+    // "format": "{name} {icon} {windows}",
+    "format": "{icon}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "workspace-taskbar": {
+      "enable": true,
+      "icon-size": 18
+    },
+    "all-outputs": false,
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "1":[],
+      "2":[],
+      "3":[],
+      "4":[],
+      "5":[],
+      "6":[],
+      "7":[],
+      "8":[],
+      "9":[],
+      "10":[],
+    }
+  },
+  "hyprland/window": {
+    "format": "{class}",
+    "rewrite": {
+      "(.+)(telegram|Telegram)(.+)": "Telegram",
+      "(.+)(dolphin)": "Dolphin",
+      "": "No active window"
+    }
+  },
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 15,
+    "icons": {
+      "blueman": "bluetooth",
+      "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+    }
+  },
+  "clock": {
+    // "format": "{:L%e %b %Y  %H:%M:%S}",
+    "format": "{:%d-%m-%Y  %H:%M}",
+    "tooltip-format": "<span font='Monospace 16'>{calendar}</span>",
+    // "locale": "ru_RU.UTF-8",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 4,
+      "format": {
+        "days": "<span color='#fce205'><b>{}</b></span>",
+        "today": "<span color='#ff0000'><b><u>{}</u></b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "months": "<span color='#ffffff'><b>{}</b></span>"
+      }
+    },
+    "actions": {
+      "on-click": "mode"
+    }
+  },
+  "cpu": {
+    "format": "󰟀  {usage}%"
+  },
+  "memory": {
+    "format": "󰍛 {}%"
+  },
+  "pulseaudio": {
+    "justify": "right",
+    "scroll-step": 10, // %, can be a float
+    // "format": "{volume}% {icon} {format_source}",
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% ",
+    "format-bluetooth-muted": " {icon}",
+    // "format-muted": " {format_source}",
+    "format-muted": " ",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "/home/timur/hyprland_waybar_config/waybar/mute.sh"
+  },
+  "idle_inhibitor": {
+    "what": "idle",
+    "format": "{icon} ",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "start-activated": true
+  },
+  "hyprland/language": {
+    "format": "{}",
+    "format-ru": "🇷🇺",
+    "format-en": "🇺🇸",
+    "on-click": "hyprctl switchxkblayout current next"
+  }
+}
