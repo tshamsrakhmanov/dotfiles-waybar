@@ -24,8 +24,9 @@
   ],
   // Modules configuration
   "hyprland/workspaces": {
-    // "format": "{name} {icon} {windows}",
-    "format": "{icon}",
+    "format": "{name}",
+    //"format": "{name} {icon} {windows}",
+    //"format": "{icon}",
     "format-icons": {
       "urgent": "",
       "active": "",
@@ -33,7 +34,7 @@
     },
     "workspace-taskbar": {
       "enable": true,
-      "icon-size": 18
+      "icon-size": 12
     },
     "all-outputs": false,
     "sort-by-number": true,
@@ -68,7 +69,7 @@
   },
   "clock": {
     // "format": "{:L%e %b %Y  %H:%M:%S}",
-    "format": "{:%d-%m-%Y  %H:%M}",
+    "format": "{:%d-%m-%Y %H:%M}",
     "tooltip-format": "<span font='Monospace 16'>{calendar}</span>",
     // "locale": "ru_RU.UTF-8",
     "calendar": {
@@ -116,19 +117,10 @@
     },
     "on-click": "/home/timur/hyprland_waybar_config/waybar/mute.sh"
   },
-  "idle_inhibitor": {
-    "what": "idle",
-    "format": "{icon} ",
-    "format-icons": {
-      "activated": "",
-      "deactivated": ""
-    },
-    "start-activated": true
-  },
   "hyprland/language": {
     "format": "{}",
-    "format-ru": "🇷🇺",
-    "format-en": "🇺🇸",
+    "format-ru": "RUS",
+    "format-en": "ENG",
     "on-click": "hyprctl switchxkblayout current next"
   }
 }
