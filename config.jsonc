@@ -27,11 +27,11 @@
     "format": "{name}",
     //"format": "{name} {icon} {windows}",
     //"format": "{icon}",
-    "format-icons": {
-      "urgent": "",
-      "active": "",
-      "default": ""
-    },
+    //"format-icons": {
+    //  "urgent": "",
+    //  "active": "",
+    //  "default": ""
+    //},
     "workspace-taskbar": {
       "enable": true,
       "icon-size": 12
@@ -55,7 +55,12 @@
     "format": "{class}",
     "rewrite": {
       "(.+)(telegram|Telegram)(.+)": "Telegram",
-      "(.+)(dolphin)": "Dolphin",
+      "(.+)(keepassxc)(.+)": "KeePassXC",
+      "(.*)(dolphin)(.*)": "Dolphin",
+      "(firefox)": "Firefox",
+      "(.+)(obsidian)(.+)": "Obsidian",
+      "(kitty)": "Kitty",
+      "(jetbrains-idea)": "Intelij-IDEA",
       "": "No active window"
     }
   },
