@@ -73,15 +73,28 @@
     }
   },
   "clock": {
-    // "format": "{:L%e %b %Y  %H:%M:%S}",
     "format": "{:%d-%m-%Y %H:%M}",
-    "tooltip-format": "<span font='Monospace 16'>{calendar}</span>",
-    // "locale": "ru_RU.UTF-8",
+    "tooltip-format": "<span font='JetBrains Mono 16'>{calendar}</span>",
+
+    // TO WORKING LOCALE!!!
+    // run these to change locale:
+    //
+    // # Uncomment ru_RU.UTF-8 in locale.gen
+    // sudo nano /etc/locale.gen
+    // # Find and uncomment: ru_RU.UTF-8 UTF-8
+    // 
+    // # Generate the locale
+    // sudo locale-gen
+    // 
+    // # Check if it's available
+    // locale -a | grep ru
+    "locale": "ru_RU.UTF-8",
+
     "calendar": {
       "mode": "month",
       "mode-mon-col": 4,
       "format": {
-        "days": "<span color='#fce205'><b>{}</b></span>",
+        "days": "<span color='#ffffff'><b>{}</b></span>",
         "today": "<span color='#ff0000'><b><u>{}</u></b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
         "months": "<span color='#ffffff'><b>{}</b></span>"
@@ -120,7 +133,7 @@
         ""
       ]
     },
-    "on-click": "/home/timur/hyprland_waybar_config/waybar/mute.sh"
+    "on-click": "/home/batya/dotfiles-waybar/mute.sh"
   },
   "hyprland/language": {
     "format": "{}",
