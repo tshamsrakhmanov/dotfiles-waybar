@@ -1,7 +1,7 @@
 * {
   /* font-family: "JetBrains Mono", FontAwesome, Roboto, Helvetica, Arial, sans-serif; */
   font-family: "JetBrains Mono";
-  font-size: 18px;
+  font-size: 16px;
 }
 
 window#waybar {
@@ -186,9 +186,9 @@ window#waybar {
 }
 
 #pulseaudio {
-  padding-right: 20px;
+  padding-right: 5px;
   /* border-bottom: 2px solid #ddc3e3; */
-  min-width: 65px;
+  /*min-width: 65px;*/
 }
 
 #pulseaudio.muted {

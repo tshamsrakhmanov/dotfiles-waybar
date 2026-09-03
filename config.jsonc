@@ -75,7 +75,6 @@
   "clock": {
     "format": "{:%d-%m-%Y %H:%M}",
     "tooltip-format": "<span font='JetBrains Mono 16'>{calendar}</span>",
-
     // TO WORKING LOCALE!!!
     // run these to change locale:
     //
@@ -105,10 +104,10 @@
     }
   },
   "cpu": {
-    "format": "󰟀  {usage}%"
+    "format": "CPU {usage}%"
   },
   "memory": {
-    "format": "󰍛 {}%"
+    "format": "RAM {}%"
   },
   "pulseaudio": {
     "justify": "right",
