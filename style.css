@@ -40,10 +40,29 @@ window#waybar {
   background-color: #555555;
 }
 
-/**/
 #clock:hover {
   background-color: #555555;
   color: white;
+}
+
+#clock {
+    color: #D4A5A5
+}
+
+#cpu {
+    color: #A9C9B8
+}
+
+#memory {
+    color: #D4C9A9
+}
+
+#language{
+    color: #E5C5A0
+}
+
+#pulseaudio {
+    color: #A9B8C9
 }
 
 #workspaces {
