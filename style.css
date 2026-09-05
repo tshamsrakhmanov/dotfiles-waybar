@@ -16,6 +16,7 @@ window#waybar {
 #window,
 #tray,
 #idle_inhibitor,
+#custom-network_speed,
 #language {
   margin-left: 0px;
   margin-right: 0px;
@@ -47,6 +48,14 @@ window#waybar {
 
 #clock {
     color: #D4A5A5
+}
+
+#custom-network_speed {
+    color: #D9A9A9
+}
+
+#custom-network_speed:hover {
+  background-color: #555555;
 }
 
 #cpu {

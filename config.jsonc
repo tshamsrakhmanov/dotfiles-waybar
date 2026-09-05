@@ -15,6 +15,7 @@
   ],
   "modules-right": [
     "pulseaudio",
+    "custom/network_speed",
     "hyprland/language",
     "cpu",
     "memory",
@@ -23,6 +24,11 @@
     // "idle_inhibitor"
   ],
   // Modules configuration
+  "custom/network_speed": {
+    "exec": "/home/batya/dotfiles-waybar/network.sh",
+    "interval": 2,
+    "return-type": "json"
+   },
   "hyprland/workspaces": {
     "format": "{name}",
     //"format": "{name} {icon} {windows}",
