@@ -74,4 +74,4 @@ PREV_TX_BYTES=$TX_BYTES_NOW
 EOF
 
 # Output JSON for Waybar
-echo "{\"text\": \"↓$RX_HR  ↑$TX_HR\"}"
+echo "{\"text\": \"↓$RX_HR ↑$TX_HR\"}"
