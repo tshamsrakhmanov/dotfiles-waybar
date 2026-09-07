@@ -31,6 +31,7 @@ window#waybar {
   padding-right: 5px;
   background-color: inherit;
   font-style: italic;
+  text-decoration: underline;
   color: white;
 }
 
