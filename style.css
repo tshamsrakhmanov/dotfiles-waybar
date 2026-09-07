@@ -16,7 +16,8 @@ window#waybar {
 #window,
 #tray,
 #idle_inhibitor,
-#custom-network_speed,
+#custom-network_rx,
+#custom-network_tx,
 #language {
   margin-left: 0px;
   margin-right: 0px;
@@ -50,11 +51,19 @@ window#waybar {
     color: #D4A5A5
 }
 
-#custom-network_speed {
-    color: #D9A9A9
+#custom-network_rx {
+    color: #aa5555
 }
 
-#custom-network_speed:hover {
+#custom-network_tx {
+    color: #55aa55
+}
+
+#custom-network_rx:hover {
+  background-color: #555555;
+}
+
+#custom-network_tx:hover {
   background-color: #555555;
 }
 

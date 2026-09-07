@@ -15,7 +15,8 @@
   ],
   "modules-right": [
     "pulseaudio",
-    "custom/network_speed",
+    "custom/network_rx",
+    "custom/network_tx",
     "hyprland/language",
     "cpu",
     "memory",
@@ -24,8 +25,13 @@
     // "idle_inhibitor"
   ],
   // Modules configuration
-  "custom/network_speed": {
-    "exec": "/home/batya/dotfiles-waybar/network.sh",
+  "custom/network_rx": {
+    "exec": "/home/batya/dotfiles-waybar/network_rx.sh",
+    "interval": 2,
+    "return-type": "json"
+   },
+  "custom/network_tx": {
+    "exec": "/home/batya/dotfiles-waybar/network_tx.sh",
     "interval": 2,
     "return-type": "json"
    },

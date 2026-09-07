@@ -10,7 +10,7 @@ if [ -z "$INTERFACE" ]; then
 fi
 
 # File to store previous stats
-STATS_FILE="/tmp/waybar_net_stats"
+STATS_FILE="/tmp/waybar_net_stats_tx"
 
 # Get current RX/TX bytes from /proc/net/dev
 read -r RX_BYTES_NOW TX_BYTES_NOW <<< $(awk -v iface="$INTERFACE" '$1 ~ iface":" {print $2, $10}' /proc/net/dev)
@@ -74,4 +74,5 @@ PREV_TX_BYTES=$TX_BYTES_NOW
 EOF
 
 # Output JSON for Waybar
-echo "{\"text\": \"↓$RX_HR ↑$TX_HR\"}"
+echo "{\"text\": \"$TX_HR↑\"}"
+# echo "{\"text\": \"$RX_HR↓\"}"
