@@ -123,7 +123,7 @@
   },
   "pulseaudio": {
     "justify": "right",
-    "scroll-step": 10,
+    "scroll-step": 5,
     // %, can be a float
     // "format": "{volume}% {icon} {format_source}",
     "format": "VOL {volume}%",
