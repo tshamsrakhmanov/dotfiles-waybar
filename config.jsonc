@@ -73,7 +73,7 @@
       "(.+)(obsidian)(.+)": "Obsidian",
       "(kitty)": "Kitty",
       "(jetbrains-idea)": "Intelij-IDEA",
-      "": "No active window"
+      "": "Empty workspace"
     }
   },
   "tray": {
